@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		3266AAF028682B940014CFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266AAEF28682B940014CFC1 /* AppDelegate.swift */; };
 		3266AAF228682B940014CFC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266AAF128682B940014CFC1 /* SceneDelegate.swift */; };
-		3266AAF428682B940014CFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266AAF328682B940014CFC1 /* ViewController.swift */; };
 		3266AAF728682B940014CFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3266AAF528682B940014CFC1 /* Main.storyboard */; };
 		3266AAF928682B960014CFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3266AAF828682B960014CFC1 /* Assets.xcassets */; };
 		3266AAFC28682B960014CFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3266AAFA28682B960014CFC1 /* LaunchScreen.storyboard */; };
+		3266AB0428682C400014CFC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266AB0328682C400014CFC1 /* TableViewController.swift */; };
+		3266AB0628682CD80014CFC1 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266AB0528682CD80014CFC1 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3266AAEC28682B940014CFC1 /* SQLiteSimpleTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteSimpleTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3266AAEF28682B940014CFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3266AAF128682B940014CFC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3266AAF328682B940014CFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3266AAF628682B940014CFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3266AAF828682B960014CFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3266AAFB28682B960014CFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3266AAFD28682B960014CFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3266AB0328682C400014CFC1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3266AB0528682CD80014CFC1 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				3266AAEF28682B940014CFC1 /* AppDelegate.swift */,
 				3266AAF128682B940014CFC1 /* SceneDelegate.swift */,
-				3266AAF328682B940014CFC1 /* ViewController.swift */,
 				3266AAF528682B940014CFC1 /* Main.storyboard */,
 				3266AAF828682B960014CFC1 /* Assets.xcassets */,
 				3266AAFA28682B960014CFC1 /* LaunchScreen.storyboard */,
 				3266AAFD28682B960014CFC1 /* Info.plist */,
+				3266AB0328682C400014CFC1 /* TableViewController.swift */,
+				3266AB0528682CD80014CFC1 /* Todo.swift */,
 			);
 			path = SQLiteSimpleTodoList;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3266AAF428682B940014CFC1 /* ViewController.swift in Sources */,
 				3266AAF028682B940014CFC1 /* AppDelegate.swift in Sources */,
+				3266AB0428682C400014CFC1 /* TableViewController.swift in Sources */,
 				3266AAF228682B940014CFC1 /* SceneDelegate.swift in Sources */,
+				3266AB0628682CD80014CFC1 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +309,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
